@@ -5,6 +5,34 @@
 * {
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --primary-font: "Baloo Da 2";
+    --secundary-font: "Josefin Slab";
+    --action-font: "Mulish";
+}
+
+.hamburguer {
+    width: 2rem;
+    height: 1.5rem;
+    position: fixed;
+    z-index: 100;
+    right: 2rem;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    height: .1rem;
+    background-color: #fff;
+    box-shadow: 0.1rem 0.1rem 1px #000;
 }
 
 header {
@@ -42,7 +70,7 @@ header {
 .banner h1 {
     color: #fff;
     font-size: 4.5rem;
-    font-family: "Baloo Da 2", serif;
+    font-family: var(--primary-font), serif;
     font-weight: 200;
     text-shadow: .2rem .2rem 2px rgb(0, 0, 0, 0.8);
     line-height: 4rem;
@@ -52,7 +80,7 @@ header {
 }
 
 .banner p {
-    font-family: "Josefin Slab", serif;
+    font-family: var(--secundary-font), serif;
     color: #fff;
     font-size: 2rem;
     text-shadow: .2rem .2rem 2px rgb(0, 0, 0, 0.8);
@@ -62,7 +90,7 @@ header {
 }
 
 .banner button {
-    font-family: "Mulish", serif;
+    font-family: var(--action-font), serif;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -89,4 +117,64 @@ header {
         transform: translateY(0) rotateY(0);
         opacity: 1;
     }
+}
+
+.sidebar {
+    width: 20rem;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    transition: all 0.8s;
+}
+
+.sidebar.show-menu {
+    right: 0;
+}
+
+.menu {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-item {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.menu-link {
+    font-family: var(--action-font);
+    font-size: 2rem;
+    color: #555;
+    transition: color 0.8s;
+}
+
+.menu-link:hover {
+    color: #E100FF;
+}
+
+.social-media {
+    width: 100%;
+    position: absolute;
+    bottom: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-media i {
+    color: #555;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.8s;
+}
+
+.social-media i:hover {
+    color: #E100FF;
 }
