@@ -64,6 +64,7 @@
     color: #fff;
     font-family: var(--action-font);
     background-color: #E100FF;
+    pointer-events: none;
     opacity: 0;
 }
 
