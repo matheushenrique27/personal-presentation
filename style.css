@@ -364,13 +364,14 @@ header {
     font-family: var(--primary-font);
     font-size: 2rem;
     font-weight: 500;
-    color: #eee
+    color: #eee;
 }
 
 .card-info h3{
     font-family: var(--secundary-font);
     font-weight: bolder;
-    color: #c4c4c4;
+    text-transform: uppercase;
+    color: #eee;
     margin-bottom: 1.5rem;
 }
 
@@ -390,4 +391,97 @@ header {
 .card:hover .card-info p{
     opacity: 1;
     max-height: 6rem;
+}
+
+.section-contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272727;
+}
+
+.contact-wrapper {
+    width: 60%;
+    height: 30rem;
+    display: flex;
+    box-shadow: 0 2rem 3rem rgba(0,0,0,0.5);
+}
+
+.contact-left {
+    width: 35%;
+    background: url(imagens/contact.png);
+    background-size: cover;
+    border-radius: 1rem;
+}
+
+.contact-right {
+    width: 65%;
+    background-color: #eee;
+    border-radius: 1rem;
+    padding: 1rem 3rem 3rem 3rem;
+}
+
+.section-contact h1{
+    font-family: var(--primary-font);
+    color: #272727;
+    font-size: 3rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.section-contact form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    position: relative;
+    max-width: 20rem;
+    height: 5rem;
+}
+
+.field {
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font-size: 1.5rem;
+    font-family: var(--secundary-font);
+    border-bottom: 2px dashed #272727;
+    outline: none;
+    margin: 2rem 0;
+    resize: none;
+}
+
+.field-label {
+    position: absolute;
+    top: 0.6rem;
+    left: 0;
+    font-size: 1.2rem;
+    font-family: var(--secundary-font);
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+.field:focus ~ label {
+    top: .8rem;
+    font-size: 1rem;
+}
+
+.button-submit {
+    font-family: var(--action-font), serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    background: #7F00FF;
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+    background: linear-gradient(to right, #E100FF, #7F00FF);
+    padding: 1rem 3rem;
+    margin-top: 4rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
