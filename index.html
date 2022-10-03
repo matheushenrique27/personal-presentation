@@ -23,7 +23,7 @@
             <span>Fechar</span>
         </div>
 
-        <header>
+        <header id="home">
             <div class="image-wrapper">
                 <img src="./imagens/backgroundDeveloper.jpg" alt="">
             </div>
@@ -38,10 +38,10 @@
             <nav>
                 <ul class="menu">
                     <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Conhecimento</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
+                    <li class="menu-item"><a href="#knowledge" class="menu-link">Conhecimento</a></li>
+                    <li class="menu-item"><a href="#projects" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#contact" class="menu-link">Contato</a></li>
+                    <li class="menu-item"><a href="#budget" class="menu-link">Orçamento</a></li>
                 </ul>
             </nav>
             <div class="social-media">
@@ -51,7 +51,7 @@
             </div>
         </aside>
 
-        <section class="section-knowledge">
+        <section class="section-knowledge" id="knowledge">
             <div class="section-header">
                 <h1>Conhecimentos</h1>
             </div>
@@ -122,7 +122,7 @@
             </div>
         </section>
 
-        <section class="section-projects">
+        <section class="section-projects" id="projects">
             <div class="section-header">
                 <h1>Projetos</h1>
             </div>
@@ -160,7 +160,7 @@
             </div>
         </section>
 
-        <section class="section-contact">
+        <section class="section-contact" id="contact">
             <div class="contact-wrapper">
                 <div class="contact-left"></div>
                 <div class="contact-right">
@@ -185,6 +185,62 @@
             </div>
         </section>
 
+        <section class="section-budget" id="budget">
+            <div class="budget-wrapper">
+                <h1>Faça um orçamento</h1>
+                <form>
+                    <label for="quantity">Quantidade de páginas</label>
+                    <input type="number" min="1" name="quantity" id="quantity">
+                    <label for="js">Preciso de um script JS</label>
+                    <input type="checkbox" name="js" id="js">
+                    <label >Layout</label>
+                    <div class="group-layout">
+                        <div>
+                            <input type="radio" name="layout" id="layout-yes">
+                            <label for="layout-yes">Preciso de um layout</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="layout" id="layout-no">
+                            <label for="layout-no">Já tenho um layout</label>
+                        </div>
+                    </div>
+                    <label for="deadline">Prazo</label>
+                    <input type="range" name="deadline" id="deadline">
+                    <button class="button-budget" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>
+                    Copyright &copy; 2022, Matheus HS - Todos os direitos reservados
+                </p>
+                <div class="social-list">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-github-alt"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <a href="#home" id="link-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </div>
 </body>
 <script src="script.js"></script>
