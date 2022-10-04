@@ -19,3 +19,22 @@ O controle das tarefas desse projeto será realizado no GitHub
 - https://uigradients.com/
 - https://favicon.io/
 - https://unsplash.com/
+
+## Unidades de Medidas do CSS
+
+- Layout Fixo:
+    - Pixel (px)
+
+- Layout Fluido:
+    - Porcentagem (%)
+    - Automática (auto)
+    - Viewport Height (vh)
+    - viewport Width (vw)
+
+- Textos Fixos
+    - 1px: 0.75pt
+    - 16px: 12pt, 1rem
+
+- Textos Fluidos
+    - Multiplicado pelo elemento pai (em)
+    - Multiplicado pelo elemento raiz (rem)
