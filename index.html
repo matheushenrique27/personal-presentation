@@ -15,14 +15,6 @@
 
 <body>
     <div class="container">
-
-        <div class="hamburguer">
-            <div class="line" id="line1"></div>
-            <div class="line" id="line2"></div>
-            <div class="line" id="line3"></div>
-            <span>Fechar</span>
-        </div>
-
         <header id="home">
             <div class="image-wrapper">
                 <img src="./imagens/backgroundDeveloper.jpg" alt="">
@@ -33,6 +25,13 @@
                 <button>Saiba mais</button>
             </div>
         </header>
+
+        <div class="hamburguer">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+            <span>Fechar</span>
+        </div>
 
         <aside class="sidebar">
             <nav>
@@ -63,7 +62,8 @@
                             <h3>HTML</h3>
                         </div>
                         <div class="knowledge-text">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
                                 been the industry's standard dummy text ever since the 1500s.</p>
                         </div>
                     </div>
@@ -73,7 +73,8 @@
                             <h3>CSS</h3>
                         </div>
                         <div class="knowledge-text">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
                                 been the industry's standard dummy text ever since the 1500s.</p>
                         </div>
                     </div>
@@ -85,7 +86,8 @@
                             <h3>Javascript</h3>
                         </div>
                         <div class="knowledge-text">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
                                 been the industry's standard dummy text ever since the 1500s.</p>
                         </div>
                     </div>
@@ -98,7 +100,8 @@
                             <h3>Git & GitHub</h3>
                         </div>
                         <div class="knowledge-text">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
                                 been the industry's standard dummy text ever since the 1500s.</p>
                         </div>
                     </div>
@@ -110,7 +113,8 @@
                             <h3>Teste</h3>
                         </div>
                         <div class="knowledge-text">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
                                 been the industry's standard dummy text ever since the 1500s.</p>
                         </div>
                     </div>
@@ -120,12 +124,13 @@
                             <h3>Teste</h3>
                         </div>
                         <div class="knowledge-text">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
                                 been the industry's standard dummy text ever since the 1500s.</p>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </section>
 
@@ -134,35 +139,50 @@
                 <h1>Projetos</h1>
             </div>
             <div class="projects">
-                <div class="card">
+                <div class="card" id="project-1">
                     <div class="card-image-wrapper">
                         <img src="./imagens/maintenance.png" alt="Imagem do Projeto 1.">
                     </div>
                     <div class="card-info">
                         <h2>Projeto 1</h2>
                         <h3>Javascript</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s.</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="project-2">
                     <div class="card-image-wrapper">
                         <img src="./imagens/maintenance.png" alt="Imagem do Projeto 1.">
                     </div>
                     <div class="card-info">
                         <h2>Projeto 2</h2>
                         <h3>HTML</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s.</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="project-3">
                     <div class="card-image-wrapper">
                         <img src="./imagens/maintenance.png" alt="Imagem do Projeto 1.">
                     </div>
                     <div class="card-info">
                         <h2>Projeto 3</h2>
                         <h3>CSS</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s.</p>
                     </div>
+                </div>
+            </div>
+
+            <div class="project-dots">
+                <div class="dot">
+                    <a href="#project-1">1</a>
+                </div>
+                <div class="dot">
+                    <a href="#project-2">2</a>
+                </div>
+                <div class="dot">
+                    <a href="#project-3">3</a>
                 </div>
             </div>
         </section>
@@ -182,8 +202,7 @@
                             <label for="email" class="field-label">E-mail</label>
                         </div>
                         <div class="input-group">
-                            <textarea class="field" 
-                            id="message"></textarea>
+                            <textarea class="field" id="message"></textarea>
                             <label for="message" class="field-label">Mensagem</label>
                         </div>
                         <button type="submit" class="button-submit">Enviar</button>
@@ -200,7 +219,7 @@
                     <input type="number" min="1" name="quantity" id="quantity">
                     <label for="js">Preciso de um script JS</label>
                     <input type="checkbox" name="js" id="script-needed">
-                    <label >Layout</label>
+                    <label>Layout</label>
                     <div class="group-layout">
                         <div>
                             <input type="radio" name="layout" id="layout-yes">
