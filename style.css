@@ -237,7 +237,7 @@ header {
 
 .knowledges {
     width: 100%;
-    height: 90%;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
@@ -262,7 +262,8 @@ header {
 
 .section-knowledge {
     background-color: #f5f5f5;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: auto;
 }
 
 .section-header {
@@ -328,7 +329,8 @@ header {
 }
 
 .section-projects {
-    height: 100vh;
+    min-height: 100vh;
+    max-height: auto;
 }
 
 .projects {
